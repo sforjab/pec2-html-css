@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- Cabecera -->
@@ -48,7 +48,12 @@
         </ul>
         <h2 class="textoCentrado">Museo Norris</h2>
         <figure>
-          <img src="./img/museo-norris.jpg" alt="Imagen de la fachada principal del Museo Norris">
+          <picture>
+            <source media="(max-width: 480px)" srcset="./img/destacadas/webp/museo-norris-400w.webp">
+            <source media="(max-width: 768px)" srcset="./img/destacadas/webp/museo-norris-600w.webp">
+            <source media="(min-width: 769px)" srcset="./img/destacadas/webp/museo-norris-800w.webp">
+            <img src="./img/destacadas/jpeg/museo-norris.jpeg" alt="Imagen de la fachada principal del Museo Norris">
+          </picture>
           <figcaption>Fachada principal del Museo Norris</figcaption>
       </figure>
         <p>
@@ -70,6 +75,26 @@
             y hay muchos ejemplos de sus imágenes en la colección del Museo. Más tarde desarrolló interés en la historia local, investigando, escribiendo 
             y publicando artículos y libros sobre la historia de <span lang="en">St. Ives</span> y otras partes del condado.
         </p>
+        <div id="imgInternas">
+          <figure>
+            <img
+            srcset="./img/internas/museo-norris-1-150w.jpeg 150w, ./img/internas/museo-norris-1-225w.jpeg 225w, ./img/internas/museo-norris-1-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            alt="Jardín del museo" />
+            <figcaption>Jardín del museo</figcaption>
+          </figure>
+          <figure>
+            <img
+            srcset="./img/internas/museo-norris-2-150w.jpeg 150w, ./img/internas/museo-norris-2-225w.jpeg 225w, ./img/internas/museo-norris-2-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            alt="Interior del museo" />
+            <figcaption>Interior del museo</figcaption>
+          </figure>          
+        </div>
       </article>
     </main>
 

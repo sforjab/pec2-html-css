@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- Cabecera -->
@@ -48,7 +48,12 @@
         </ul>
         <h2 class="textoCentrado">Ayuntamiento de <span lang="en">St. Ives</span></h2>
         <figure>
-          <img src="./img/ayuntamiento.jpg" alt="Imagen del Ayuntamiento de St. Ives" >
+          <picture>
+            <source media="(max-width: 480px)" srcset="./img/destacadas/webp/ayuntamiento-400w.webp">
+            <source media="(max-width: 768px)" srcset="./img/destacadas/webp/ayuntamiento-600w.webp">
+            <source media="(min-width: 769px)" srcset="./img/destacadas/webp/ayuntamiento-800w.webp">
+            <img src="./img/destacadas/jpeg/ayuntamiento.jpeg" alt="Imagen del Ayuntamiento de St. Ives">
+          </picture>
           <figcaption>Ayuntamiento de St. Ives</figcaption>
       </figure>
         <p>
@@ -72,6 +77,26 @@
             además de actuar como lugar de culto para la rama local de la Iglesia Reformada Unida. En 2009 se completó un amplio programa de obras de mejora, incluida 
             la instalación de un ascensor.        
         </p>
+        <div id="imgInternas">
+          <figure>
+            <img
+            srcset="./img/internas/ayuntamiento-1-150w.jpeg 150w, ./img/internas/ayuntamiento-1-225w.jpeg 225w, ./img/internas/ayuntamiento-1-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            alt="Hall de entrada al Ayuntamiento" />
+            <figcaption>Hall de entrada al Ayuntamiento</figcaption>
+          </figure>
+          <figure>
+            <img
+            srcset="./img/internas/ayuntamiento-2-150w.jpeg 150w, ./img/internas/ayuntamiento-2-225w.jpeg 225w, ./img/internas/ayuntamiento-2-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                    350px"
+            alt="Vista del Ayuntamiento tras el mercado" />
+            <figcaption>Vista del Ayuntamiento tras el mercado</figcaption>
+          </figure>
+        </div>
       </article>
     </main>
 

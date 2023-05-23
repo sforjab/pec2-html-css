@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- Cabecera -->
@@ -48,7 +48,12 @@
         </ul>
         <h2 class="textoCentrado">Puente medieval</h2>
         <figure>
-          <img src="./img/puente-2022.jpeg" alt="Imagen actual del puente medieval de St. Ives" >
+          <picture class="animation-container" transition-style="in:circle:center">
+            <source media="(max-width: 480px)" srcset="./img/destacadas/webp/puente-400w.webp">
+            <source media="(max-width: 768px)" srcset="./img/destacadas/webp/puente-600w.webp">
+            <source media="(min-width: 769px)" srcset="./img/destacadas/webp/puente-800w.webp">
+            <img src="./img/destacadas/jpeg/puente.jpeg" alt="Imagen actual del puente medieval de St. Ives">
+          </picture>
           <figcaption>Puente medieval de <span lang="en">St. Ives</span> en la actualidad</figcaption>
         </figure>
         <p>
@@ -70,6 +75,26 @@
             se descubrió que la estructura estaba debilitada, por lo que se quitaron los pisos adicionales y se restauró la capilla, que en la actualidad se ha vuelto <a href=""></a>
             utilizar para el culto público de forma ocasional.
         </p>        
+        <div id="imgInternas">
+          <figure>
+            <img
+            srcset="./img/internas/puente-1-150w.jpeg 150w, ./img/internas/puente-1-225w.jpeg 225w, ./img/internas/puente-1-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            alt="Foto nocturna del puente medieval de St. Ives" />
+            <figcaption>Foto nocturna del puente medieval de St. Ives</figcaption>
+          </figure>
+          <figure>
+            <img
+            srcset="./img/internas/puente-2-150w.jpeg 150w, ./img/internas/puente-2-225w.jpeg 225w, ./img/internas/puente-2-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            alt="Vista de la calzada sobre el puente" />
+            <figcaption>Vista de la calzada sobre el puente</figcaption>
+          </figure>          
+        </div>
       </article>
     </main>
 

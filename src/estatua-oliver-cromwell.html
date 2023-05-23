@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- Cabecera -->
@@ -48,7 +48,12 @@
         </ul>
         <h2 class="textoCentrado">Estatua de <span lang="en">Oliver Cromwell</span></h2>
         <figure>
-          <img src="img/estatua-cromwell.jpeg" alt="Foto de la estatua de Oliver Cromwell">
+          <picture>
+            <source media="(max-width: 480px)" srcset="./img/destacadas/webp/estatua-cromwell-400w.webp">
+            <source media="(max-width: 768px)" srcset="./img/destacadas/webp/estatua-cromwell-600w.webp">
+            <source media="(min-width: 769px)" srcset="./img/destacadas/webp/estatua-cromwell-800w.webp">
+            <img src="./img/destacadas/jpeg/estatua-cromwell.jpeg" alt="Foto de la estatua de Oliver Cromwell">
+          </picture>
           <figcaption>Estatua de <span lang="en">Oliver Cromwell</span></figcaption>
         </figure>
         <p>
@@ -67,6 +72,26 @@
           dictador responsable de numerosas matanzas, en particular durante la conquista de Irlanda. Esto ha llevado a debates sobre la adecuación de mantener 
           estatuas en su honor. De hecho, se han producido recogidas de firmas para intentar eliminar la existente en <span lang="en">St. Ives</span>.
         </p>
+        <div id="imgInternas">
+          <figure>
+            <img
+            srcset="./img/internas/oliver-cromwell-1-150w.jpeg 150w, ./img/internas/oliver-cromwell-1-225w.jpeg 225w, ./img/internas/oliver-cromwell-1-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                  350px"
+            alt="Vista lateral de la estatua de Oliver Cromwell" />
+            <figcaption>Vista lateral de la estatua</figcaption>
+          </figure>
+          <figure>
+            <img
+            srcset="./img/internas/oliver-cromwell-2-150w.jpeg 150w, ./img/internas/oliver-cromwell-2-225w.jpeg 225w, ./img/internas/oliver-cromwell-2-350w.jpeg 350w"
+            sizes="(max-width: 480px) 150px,
+                  (max-width: 768px) 225px,
+                    350px"
+            alt="Retrato de Oliver Cromwell" />
+            <figcaption>Retrato de Oliver Cromwell</figcaption>
+          </figure>
+        </div>
         <p>
           En el siguiente vídeo, podemos entender un poco más sobre su figura:
         </p>

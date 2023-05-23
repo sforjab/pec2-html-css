@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- Cabecera -->
@@ -48,7 +48,12 @@
         </ul>
         <h2 class="textoCentrado">Iglesia Parroquial de Todos los Santos</h2>
         <figure>
-          <img src="img/all-saints-church.jpg" alt="Foto del exterior de la Iglesia Parroquial de Todos los Santos">
+          <picture>
+            <source media="(max-width: 480px)" srcset="./img/destacadas/webp/iglesia-400w.webp">
+            <source media="(max-width: 768px)" srcset="./img/destacadas/webp/iglesia-600w.webp">
+            <source media="(min-width: 769px)" srcset="./img/destacadas/webp/iglesia-800w.webp">
+            <img src="./img/destacadas/jpeg/iglesia.jpeg" alt="Foto del exterior de la Iglesia Parroquial de Todos los Santos">
+          </picture>
             <figcaption>Exterior de la Iglesia Parroquial de Todos los Santos</figcaption>
         </figure>
         <p>
