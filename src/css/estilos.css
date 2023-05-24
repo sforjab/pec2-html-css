@@ -38,7 +38,7 @@ h1 span {
 }
 
 h2, h3 {
-    color: var(---col-black);
+    color: var(--col-black);
     font-weight: 800;
 }
 
