@@ -205,22 +205,22 @@ iframe {
 
 /* Presentación */
 
-@keyframes float {
+@keyframes flotar {
     0% {
-      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translateY(0px);
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translateY(0px);
     }
     50% {
-      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-      transform: translateY(-20px);
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translateY(-20px);
     }
     100% {
-      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-      transform: translateY(0px);
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translateY(0px);
     }
-  }
+}
   
-  .logoAnimado {
+.logoAnimado {
     width: 150px;
     height: 150px;
     box-sizing: border-box;
@@ -229,13 +229,13 @@ iframe {
     overflow: hidden;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: translateY(0px);
-    animation: float 5s ease-in-out infinite;
-  }
-  
-  .logoAnimado img {
+    animation: flotar 5s ease-in-out infinite;
+}
+
+.logoAnimado img {
     width: 100%;
     height: auto;
-  }
+}
 
 #canvasPoblacion {
     display: block;
@@ -272,37 +272,34 @@ iframe {
     display: flex;
     justify-content: space-around;
 }
-
-/* Animation property */
   
-#listaLugares img:hover {
-    animation: wiggle 2s linear;
-  }
-  
-  /* Keyframes */
-  @keyframes wiggle {
+@keyframes sacudir {
     0%, 7% {
-      transform: rotateZ(0);
+        transform: rotateZ(0);
     }
     15% {
-      transform: rotateZ(-15deg);
+        transform: rotateZ(-15deg);
     }
     20% {
-      transform: rotateZ(10deg);
+        transform: rotateZ(10deg);
     }
     25% {
-      transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
     }
     30% {
-      transform: rotateZ(6deg);
+        transform: rotateZ(6deg);
     }
     35% {
-      transform: rotateZ(-4deg);
+        transform: rotateZ(-4deg);
     }
     40%, 100% {
-      transform: rotateZ(0);
+        transform: rotateZ(0);
     }
-  }
+}
+
+#listaLugares img:hover {
+    animation: sacudir 2s linear;
+}
 
 /* Páginas de detalle */
 
